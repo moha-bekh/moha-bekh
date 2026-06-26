@@ -33,10 +33,10 @@ My long-term goal is to design reliable software across the entire stack, with a
 `REST` · `gRPC` · `PostgreSQL` · `MongoDB`
 
 **Security**
-`Linux Security` · `Container Security` · `OWASP` · `SAST`
+`Linux Security` · `Container Security` · `Vault` · `SOPS` · `OWASP` · `SAST`
 
 **Observability**
-`Prometheus` · `Grafana` · `Vault` · `SOPS`
+`Prometheus` · `Grafana`
 
 **Environment**
 `Arch Linux` · `Neovim` · `tmux`
