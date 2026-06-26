@@ -16,6 +16,10 @@ I enjoy understanding how software works beneath the abstraction layers—from A
 
 My long-term goal is to design reliable software across the entire stack, with a particular interest in operating systems, databases, networking, distributed systems and kernel development.
 
+## Working Directory
+
+<img src="/assets/working-dir.gif">
+
 ---
 
 ## Current Toolbox
