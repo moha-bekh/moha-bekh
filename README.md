@@ -18,7 +18,9 @@ My long-term goal is to design reliable software across the entire stack, with a
 
 ## Working Directory
 
-<img src="/assets/working-dir.gif">
+<p align="center">
+	<img src="/assets/working-dir.gif">
+</p>
 
 ---
 
