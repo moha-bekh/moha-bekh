@@ -6,8 +6,6 @@ Software Engineer • Systems Programming • Platform Engineering • DevSecOps
 
 > *Building reliable software from the operating system to the cloud.*
 
----
-
 ## About
 
 I'm a Software Engineering student at **42 Paris** with a growing specialization in **Systems Programming**, **Platform Engineering**, and **DevSecOps**.
@@ -21,8 +19,6 @@ My long-term goal is to design reliable software across the entire stack, with a
 <p align="center">
 	<img src="/assets/working-dir.gif">
 </p>
-
----
 
 ## Current Toolbox
 
@@ -47,259 +43,93 @@ My long-term goal is to design reliable software across the entire stack, with a
 **Environment**
 `Arch Linux` · `Neovim` · `tmux`
 
----
-
 # Featured Projects
 
-## ATFQ
+### ATFQ
+Cloud-native learning platform exploring **microservices**, **distributed systems**, **GitOps**, **IaC** and **observability**.  
+`Rust` · `Go` · `React` · `Kubernetes` · `Terraform` · `AWS`
 
-A question-driven learning platform built around a cloud-native architecture.
+### WebServ
+High-performance asynchronous HTTP server inspired by production web servers.  
+`C++` · `epoll` · `HTTP` · `CGI`
 
-**Stack**
+### MiniShell
+POSIX-compliant Unix shell featuring AST parsing, pipes, signals and process management.  
+`C` · `POSIX` · `AST`
 
-`Rust` · `Go` · `React` · `Kubernetes` · `Terraform` · `AWS` · `GitHub Actions` · `Prometheus` · `Grafana`
-
-**Topics explored**
-
-* Microservices
-* Distributed Systems
-* GitOps
-* Infrastructure as Code
-* Observability
-* Developer Experience
-
----
-
-## WebServ
-
-High-performance asynchronous HTTP server written in C++.
-
-**Topics explored**
-
-* epoll
-* HTTP parsing
-* CGI
-* State machines
-* Memory management
-
-**Goal**
-
-Understand how production web servers are designed and implemented.
-
----
-
-## MiniShell
-
-POSIX-compliant shell written in C.
-
-**Topics explored**
-
-* AST parsing
-* Process management
-* Signals
-* Pipes
-* Shell expansion
-
-**Goal**
-
-Reproduce the behaviour of a Unix shell while exploring Linux process management.
-
----
-
-# 42 Journey
+# 42 Specialization
 
 ## Completed
 
-### libasm
+**libasm :** Reimplemented part of the C standard library in x86-64 Assembly to understand the System V ABI, calling conventions and low-level execution.
 
-Reimplemented part of the C standard library in x86-64 Assembly to understand the System V ABI, calling conventions and low-level execution.
+**ft_nm :** Building an ELF symbol inspector to explore executable formats, linkers and binary analysis.
 
-### ft_linux
+**ft_linux :** Built an entire Linux distribution from source following the Linux From Scratch methodology, including kernel compilation, bootloader, userspace and system configuration.
 
-Built an entire Linux distribution from source following the Linux From Scratch methodology, including kernel compilation, bootloader, userspace and system configuration.
+**krpsim :** Designing a discrete-event simulation engine focused on dependency graphs, scheduling and optimization algorithms.
 
-### Snow Crash
+**Snow Crash :** Privilege escalation and binary exploitation exercises covering SUID, race conditions, environment attacks and common Linux security vulnerabilities.
 
-Privilege escalation and binary exploitation exercises covering SUID, race conditions, environment attacks and common Linux security vulnerabilities.
+**Inception of Things :** Explored Kubernetes fundamentals through container orchestration, GitOps workflows and cloud-native tooling.
 
-### Cloud-1
+**Cloud-1 :** Designed and deployed cloud infrastructure while learning Infrastructure as Code, networking and deployment automation.
 
-Designed and deployed cloud infrastructure while learning Infrastructure as Code, networking and deployment automation.
-
-### Inception of Things
-
-Explored Kubernetes fundamentals through container orchestration, GitOps workflows and cloud-native tooling.
-
----
+**BADASS :** Orchestrating virtual data center infrastructures and mastering advanced BGP EVPN and VXLAN routing protocols using GNS3 and Docker.
 
 ## Currently Building
 
-### ft_ls
-
-Reimplementing the Unix `ls` command to better understand filesystem metadata, directory traversal and POSIX APIs.
-
-### ft_nm
-
-Building an ELF symbol inspector to explore executable formats, linkers and binary analysis.
-
-### krpsim
-
-Designing a discrete-event simulation engine focused on dependency graphs, scheduling and optimization algorithms.
-
-### badass
-
-Exploring advanced operating system concepts and low-level programming.
-
----
+**KFS :** Build a small operating system from scratch, progressively implementing memory management, interrupts, scheduling and kernel subsystems.
 
 ## Next Challenges
 
-### Systems Programming
+**Rainfall :** Binary exploitation and reverse engineering challenges focused on Linux internals.
 
-#### malloc
+**Override :** Advanced exploitation techniques including memory corruption and privilege escalation.
 
-Build a custom memory allocator implementing heap management, allocation strategies and fragmentation reduction.
+**malloc :** Build a custom memory allocator implementing heap management, allocation strategies and fragmentation reduction.
 
-#### taskmaster
+**ft_nmap :** Develop a multithreaded network scanner implementing common TCP scan techniques and service discovery.
 
-Develop a process supervisor similar to Supervisor for monitoring and managing long-running services.
+**ft_lex :** Implement a lexical analyzer generator inspired by Lex.
 
-#### 42sh
+**ft_yacc :** Implement an LALR parser generator inspired by Yacc/Bison.
 
-Build a production-grade POSIX shell featuring job control, scripting and advanced parsing.
+**cc1 :** Build the front-end of a C compiler including parsing, semantic analysis and intermediate representations.
 
-#### KFS
+**taskmaster :** Develop a process supervisor similar to Supervisor for monitoring and managing long-running services.
 
-Build a small operating system from scratch, progressively implementing memory management, interrupts, scheduling and kernel subsystems.
-
----
-
-### Networking
-
-#### ft_nmap
-
-Develop a multithreaded network scanner implementing common TCP scan techniques and service discovery.
-
-#### ft_ping
-
-Implement ICMP Echo Request/Reply using raw sockets to understand low-level networking.
-
-#### ft_traceroute
-
-Explore Internet routing, TTL manipulation and packet forwarding.
-
-#### ft_strace
-
-Trace Linux system calls with `ptrace` to better understand user/kernel interactions.
-
----
-
-### Security
-
-#### Rainfall
-
-Binary exploitation and reverse engineering challenges focused on Linux internals.
-
-#### Override
-
-Advanced exploitation techniques including memory corruption and privilege escalation.
-
-#### Boot2Root
-
-Penetration testing challenges covering enumeration, exploitation and post-exploitation.
-
----
-
-### Compilers
-
-#### ft_lex
-
-Implement a lexical analyzer generator inspired by Lex.
-
-#### ft_yacc
-
-Implement an LALR parser generator inspired by Yacc/Bison.
-
-#### cc1
-
-Build the front-end of a C compiler including parsing, semantic analysis and intermediate representations.
-
----
-
-### Personal Projects
-
-#### Database Engine
-
-Explore storage engines, indexing structures, transactions and query execution.
-
-#### Compiler
-
-Explore parsing, optimization passes and native code generation.
-
----
+**42sh :** Build a production-grade POSIX shell featuring job control, scripting and advanced parsing.
 
 # Engineering Interests
 
+* Kernel Development
 * Systems Programming
 * Operating Systems
-* Platform Engineering
-* Networking
-* Distributed Systems
-* Databases
-* Kernel Development
 * Performance Engineering
 * Compilers
 * Cybersecurity
+* Platform Engineering
 * Cloud Infrastructure
-
----
+* Distributed Systems
 
 # Current Reading
 
-* *Code: The Hidden Language of Computer Hardware and Software*
-* *Operating Systems: Three Easy Pieces*
+* *Code: The Hidden Language of Computer Hardware and Software* — Charles Petzold
+* *Operating Systems: Three Easy Pieces* — Remzi H. Arpaci-Dusseau & Andrea C. Arpaci-Dusseau
 * *Low-Level Programming* — Igor Zhirkov
-* *The Rust Programming Language*
-* *Computer Systems: A Programmer's Perspective*
-* *Hacking: The Art of Exploitation*
-* *Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems*
-
----
+* *The Rust Programming Language* — Steve Klabnik & Carol Nichols
+* *Hacking: The Art of Exploitation* — Jon Erickson
+* *Systems Performance: Enterprise and the Cloud* — Brendan Gregg
+* *A Philosophy of Software Design* — John Ousterhout
 
 # Currently Exploring
 
+* CPU Architecture
 * Linux Kernel Internals
 * ELF Format
 * Memory Allocators
 * Process Scheduling
-* Kubernetes
-* Distributed Systems
-
----
-
-# Learning Journey
-
-```text
-Software Engineering
-│
-├── Web Development                ✓
-├── DevOps                         ✓
-├── Cloud Infrastructure           ✓
-├── Systems Programming            ●
-├── Operating Systems              ●
-├── Networking                     ●
-├── Security                       ●
-├── Distributed Systems            ●
-├── Kernel Development             ●
-├── Compilers                      ○
-└── Databases                      ○
-
-✓ Comfortable
-● Currently learning
-○ Long-term goal
-```
-
----
 
 # Philosophy
 
@@ -308,8 +138,6 @@ Software Engineering
 I believe great engineering isn't only about writing fast software—it's about building systems that are easy to deploy, monitor, debug and evolve.
 
 I'm particularly interested in understanding the engineering behind abstractions, from compilers and operating systems to distributed systems and cloud platforms.
-
----
 
 ## Beyond Programming
 
@@ -320,8 +148,6 @@ I'm particularly interested in understanding the engineering behind abstractions
 Outside of software, I enjoy disciplines where progress comes through patience, consistency and continuous improvement. Whether it's systems programming or action sports, I'm motivated by continuously learning and refining my skills.
 
 **Next adventures:** Snowboarding & Surfing.
-
----
 
 ## Contact
 
