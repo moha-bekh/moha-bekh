@@ -1,79 +1,127 @@
 # Mohamed Bekheira
 
 ```text
-Software Engineer • Systems Programming • Platform Engineering • DevSecOps
+Systems Engineering • Linux Performance • Developer Tools
 ```
 
-> *Building reliable software from the operating system to the cloud.*
+> Exploring Linux internals, performance, and the tools that make systems easier to understand.
 
-**Currently:** Systems Engineer Intern @ [CodSpeed](https://codspeed.io) — performance instrumentation, Linux runtime tracing, benchmark runners.
+I'm a software engineering student at **42 Paris**, with previous experience as a **Systems Engineer Intern at [CodSpeed](https://github.com/CodSpeedHQ)**, where I worked on Linux performance instrumentation, profiling tools, and benchmark runners.
 
-## About
-
-Software Engineering student at **42 Paris**, specializing in **Systems Programming**, **Platform Engineering**, and **DevSecOps**. I enjoy understanding how software works beneath the abstraction layers — from Assembly and Linux internals to distributed systems and cloud-native platforms.
+I build tools to **measure Linux behavior**, **diagnose system capabilities**, and **make complex environments easier to understand and reproduce**.
 
 ## Working Directory
 
 <p align="center">
-	<img src="/assets/working-dir.gif">
+  <img src="/assets/working-dir.gif" alt="Working directory animation">
 </p>
 
-## Current Toolbox
+## Featured Projects
 
-**Languages** `Rust` · `Go` · `C` · `C++` · `TypeScript` · `SQL` · `x86 Assembly`
-**Systems** `Linux` · `POSIX` · `ELF` · `Networking`
-**Platform & Cloud** `Docker` · `Kubernetes` · `Terraform` · `AWS` · `Ansible` · `Argo CD` · `GitHub Actions`
-**Backend** `REST` · `gRPC` · `PostgreSQL` · `MongoDB`
-**Security** `Linux Security` · `Container Security` · `Vault` · `SOPS` · `OWASP` · `SAST`
-**Observability** `Prometheus` · `Grafana`
-**Environment** `Arch Linux` · `Neovim` · `tmux`
+I build these tools under **[DevUtils](https://github.com/devutils-org)** — [explore the projects](https://devutils-org.github.io/).
 
-# Featured Projects
+### [Omniscient (`omn`)](https://devutils-org.github.io/tools/omn/) — Linux Profiling & Benchmark Automation
 
-### fdtrace
-Syscall tracer in Rust using `ptrace(PTRACE_SYSCALL)` — intercepts file-related syscalls, tracks open/read/write/dup sessions, and attributes call sites via stack-pointer inspection and DWARF debug info.
-`Rust` · `ptrace` · `ELF` · `DWARF`
+A Rust-based Linux measurement engine for profiling, observability, and **benchmark-as-code** workflows. It collects data directly through **eBPF**, `perf_event_open`, `procfs`, `sysfs`, and netlink—without wrapping external profiling tools.
 
-### krpsim × CodSpeed
-Integrated continuous benchmarking into a discrete-event simulation engine (dependency graphs, scheduling, optimization). [Report](https://github.com/moha-bekh/krpsim/blob/main/benchmarks/CODSPEED_REPORT.md)
-`Rust` · `CodSpeed` · `CI`
+- **Measurement quality:** provenance, reliability, collection limitations, and cross-subsystem event correlation.
+- **Automation:** flexible input and output formats designed to integrate measurements into CI/CD pipelines and reproducible benchmark workflows.
 
-### WebServ
-High-performance asynchronous HTTP server inspired by production web servers.
-`C++` · `epoll` · `HTTP` · `CGI`
+`Rust` · `Linux` · `eBPF` · `perf_event_open` · `Profiling` · `CI/CD` · `Benchmark-as-Code`
 
-### MiniShell
-POSIX-compliant Unix shell featuring AST parsing, pipes, signals and process management.
-`C` · `POSIX` · `AST`
+**Repository:** Private for now · [Project overview](https://devutils-org.github.io/tools/omn/)
 
-# 42 Specialization
+### [distroproof](https://github.com/devutils-org/distroproof) — Linux Compatibility Diagnostics
 
-**Completed** — `ft_linux` (Linux From Scratch: kernel, bootloader, userspace) · `libasm` (x86-64 ASM, System V ABI) · `ft_nm` (ELF symbol inspector) · `krpsim` (dependency graphs & scheduling) · `Snow Crash` (binary exploitation, SUID, race conditions) · `Cloud-1` · `Inception of Things` (Kubernetes/GitOps) · `BADASS` (BGP EVPN/VXLAN)
+A Rust tool for identifying why software behaves differently across Linux environments.
 
-**Building** — `KFS`: small OS from scratch in Rust (memory management, interrupts, scheduling, kernel subsystems)
+- **Available:** `envprobe`, a static musl-linked CLI that checks kernel capabilities, BPF/perf, security restrictions, libc, and other environment properties; emits diffable JSON reports.
+- **Planned:** QEMU/KVM orchestration and cross-distribution compatibility testing.
 
-**Next** — `malloc` (custom allocator) · `taskmaster` (process supervisor) · `Rainfall`/`Override` (exploitation) · `ft_nmap` · `cc1` (C compiler front-end) · `42sh`
+`Rust` · `musl` · `Linux` · `Compatibility` · `JSON`
 
-# Engineering Interests
+**Repository:** [devutils-org/distroproof](https://github.com/devutils-org/distroproof) · [Project overview](https://devutils-org.github.io/tools/distroproof/)
 
-Kernel Development · Systems Programming · Performance Engineering · Compilers · Cybersecurity · Platform Engineering · Distributed Systems
+### [atfq](https://github.com/devutils-org/atfq) — Linux Diagnostics & Knowledge
 
-# Currently Reading
+A read-only Linux companion combining **49 live system probes**, an interactive TUI, a built-in knowledge base, JSON output, and a stdio MCP server for AI-agent integration.
 
-*Systems Performance: Enterprise and the Cloud* (Brendan Gregg) · *Operating Systems: Three Easy Pieces* · *The Rust Programming Language* · *A Philosophy of Software Design*
+- **Focus:** accessible Linux diagnostics without root access, network calls, or system modification.
 
-# Philosophy
+`Rust` · `CLI` · `TUI` · `procfs` · `sysfs` · `MCP`
 
-> Build software that is understandable, observable, reproducible and maintainable.
+**Repository:** [devutils-org/atfq](https://github.com/devutils-org/atfq) · [Project overview](https://devutils-org.github.io/tools/atfq/)
 
-Great engineering isn't only about writing fast software — it's about building systems that are easy to deploy, monitor, debug and evolve.
+### [pkgx](https://github.com/devutils-org/pkgx) — Package Inventory & Reconciliation
+
+A Rust CLI for inspecting installed packages, understanding their provenance and dependencies, and reconciling a machine against declarative TOML profiles.
+
+- **Available:** native package inspection across APT, Pacman, RPM/DNF, Flatpak, and Homebrew; inventory export, diffs, and reviewable plans.
+- **Execution:** native APT execution is experimental; plans can be inspected and dry-run before applying changes.
+
+`Rust` · `CLI` · `TUI` · `Package Management` · `TOML`
+
+**Repository:** [devutils-org/pkgx](https://github.com/devutils-org/pkgx) · [Project overview](https://devutils-org.github.io/tools/pkgx/)
+
+### [VMAnyware](https://github.com/devutils-org/VMAnyware) — Homelab Infrastructure
+
+An early-stage native application intended to manage reproducible Linux environments on a self-hosted Proxmox homelab.
+
+- **Available:** Tauri/React application scaffold and Rust/Axum local API foundation.
+- **Planned:** VM lifecycle management, SSH access, and reproducible environment workflows.
+
+`Rust` · `Tauri` · `React` · `Axum` · `Proxmox`
+
+**Repository:** [devutils-org/VMAnyware](https://github.com/devutils-org/VMAnyware) · [Project overview](https://devutils-org.github.io/tools/vmanyware/)
+
+## Other Engineering Projects
+
+- **[ATFQ Wiki](https://github.com/moha-bekh/atfq-poc)** — Question-driven wiki and learning platform (separate from the Linux diagnostics tool featured above).
+- **[WebServ](https://github.com/moha-bekh/WebServ)** — Asynchronous HTTP server in C++: `epoll`, HTTP parsing, CGI, state machines, and memory management.
+- **[MiniShell](https://github.com/moha-bekh/minishell)** — Unix shell in C: process management, signals, pipes, expansions, and AST parsing.
+- **[libasm](https://github.com/moha-bekh/asm)** — x86-64 Assembly implementations exploring the System V ABI and calling conventions.
+- **ft_linux** — Linux From Scratch distribution built from source, including kernel and userspace configuration.
+- **[Snow Crash](https://github.com/moha-bekh/snow-crash)** — Linux privilege escalation and security exercises.
+- **[Cloud-1](https://github.com/moha-bekh/cloud-1)** — Cloud infrastructure, deployment automation, and Infrastructure as Code.
+- **[Inception of Things](https://github.com/moha-bekh/Inception-of-Things)** — Kubernetes fundamentals, container orchestration, and GitOps.
+- **[ft_nm](https://github.com/moha-bekh/ft_nm)** — ELF symbol inspection and binary format analysis.
+- **[badass](https://github.com/moha-bekh/BADASS)** — Network simulation and configuration with GNS3, Docker, VXLAN, BGP EVPN, and routing protocols.
+- **[krpsim](https://github.com/moha-bekh/krpsim)** — Discrete-event simulation, dependency graphs, and scheduling algorithms.
+- **[kfs-1](https://github.com/moha-bekh/kernel-from-scratch)** — First steps toward building a small operating system kernel.
+- **[miniRT](https://github.com/moha-bekh/miniRT)** — Minimal ray tracer in C exploring ray-object intersections, lighting, and 3D rendering.
+
+## Toolbox
+
+| Area | Technologies |
+| --- | --- |
+| **Languages** | Rust, C, C++, Go, TypeScript, x86-64 Assembly |
+| **Linux & Performance** | POSIX, ELF, `procfs`, `sysfs`, eBPF, `perf_event_open`, profiling |
+| **Infrastructure** | Docker, Kubernetes, Terraform, Ansible, AWS, GitHub Actions |
+| **Tooling & Interfaces** | CLI, TUI, MCP, Git, JSON output |
+| **Environment** | Arch Linux, Neovim, tmux |
+
+<details>
+<summary><strong>Interests & reading</strong></summary>
+
+**Engineering interests:** Linux internals, operating systems, performance, kernel development, networking, distributed systems, databases, compilers, and infrastructure.
+
+**On my bookshelf:**
+- *Operating Systems: Three Easy Pieces*
+- *Computer Systems: A Programmer's Perspective*
+- *Low-Level Programming* — Igor Zhirkov
+- *The Rust Programming Language*
+- *A Philosophy of Software Design* — John Ousterhout
+- *Designing Data-Intensive Applications*
+- *Code: The Hidden Language of Computer Hardware and Software*
+
+</details>
 
 ## Beyond Programming
 
-Triathlon · Action Sports · DJing & MAO
-
-Outside of software, I enjoy disciplines where progress comes through patience, consistency and continuous improvement. Next adventures: Snowboarding & Surfing.
+🏊 Triathlon · 🛹 Action Sports · 🎧 DJing
 
 ## Contact
 
-**Email** `moha.bekh.pro@gmail.com` · **LinkedIn** [mohamedbekheira](https://linkedin.com/in/mohamedbekheira) · **GitHub** [moha-bekh](https://github.com/moha-bekh)
+- **Email:** [moha.bekh.pro@gmail.com](mailto:moha.bekh.pro@gmail.com)
+- **LinkedIn:** [mohamedbekheira](https://www.linkedin.com/in/mohamedbekheira)
+- **GitHub:** [moha-bekh](https://github.com/moha-bekh)
