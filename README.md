@@ -36,7 +36,7 @@ A Rust-based Linux measurement engine for profiling, observability, and **benchm
 A Rust tool for identifying why software behaves differently across Linux environments.
 
 - **Available:** `envprobe`, a static musl-linked CLI that checks kernel capabilities, BPF/perf, security restrictions, libc, and other environment properties; emits diffable JSON reports.
-- **Planned:** QEMU/KVM orchestration and cross-distribution compatibility testing.
+- **VM matrix:** runs a program in QEMU/KVM on 20 distro images, each on its own kernel, and explains failures against passing targets; JSON, JUnit and Markdown reports, and a TUI. Run on Omniscient, it found 27 defects one development machine never showed.
 
 `Rust` · `musl` · `Linux` · `Compatibility` · `JSON`
 
@@ -44,7 +44,7 @@ A Rust tool for identifying why software behaves differently across Linux enviro
 
 ### [atfq](https://github.com/devutils-org/atfq) — Linux Diagnostics & Knowledge
 
-A read-only Linux companion combining **49 live system probes**, an interactive TUI, a built-in knowledge base, JSON output, and a stdio MCP server for AI-agent integration.
+A read-only Linux companion combining **50 live system probes**, an interactive TUI, a built-in knowledge base, JSON output, and a stdio MCP server for AI-agent integration.
 
 - **Focus:** accessible Linux diagnostics without root access, network calls, or system modification.
 
@@ -52,23 +52,23 @@ A read-only Linux companion combining **49 live system probes**, an interactive 
 
 **Repository:** [devutils-org/atfq](https://github.com/devutils-org/atfq) · [Project overview](https://devutils-org.github.io/tools/atfq/)
 
-### [pkgx](https://github.com/devutils-org/pkgx) — Package Inventory & Reconciliation
+### [xpac](https://github.com/devutils-org/xpac) — Package Inventory & Reconciliation
 
 A Rust CLI for inspecting installed packages, understanding their provenance and dependencies, and reconciling a machine against declarative TOML profiles.
 
-- **Available:** native package inspection across APT, Pacman, RPM/DNF, Flatpak, and Homebrew; inventory export, diffs, and reviewable plans.
-- **Execution:** native APT execution is experimental; plans can be inspected and dry-run before applying changes.
+- **Available:** native package inspection across APT, Pacman, RPM/DNF, Flatpak, Homebrew, apk, and Portage; inventory export, diffs, and reviewable plans.
+- **Execution:** experimental, confirmed native execution for all seven; plans can be inspected and dry-run before applying changes.
 
 `Rust` · `CLI` · `TUI` · `Package Management` · `TOML`
 
-**Repository:** [devutils-org/pkgx](https://github.com/devutils-org/pkgx) · [Project overview](https://devutils-org.github.io/tools/pkgx/)
+**Repository:** [devutils-org/xpac](https://github.com/devutils-org/xpac) · [Project overview](https://devutils-org.github.io/tools/xpac/)
 
 ### [VMAnyware](https://github.com/devutils-org/VMAnyware) — Homelab Infrastructure
 
 An early-stage native application intended to manage reproducible Linux environments on a self-hosted Proxmox homelab.
 
-- **Available:** Tauri/React application scaffold and Rust/Axum local API foundation.
-- **Planned:** VM lifecycle management, SSH access, and reproducible environment workflows.
+- **Available:** reusable environment definitions, read-only Proxmox inventory, provisioning previews, and a native SSH terminal prototype with verified host trust.
+- **In progress:** confirmed creation, lifecycle, snapshot and deletion workflows pass local fixture checks; real-host validation and a local (QEMU) provider beside Proxmox are next.
 
 `Rust` · `Tauri` · `React` · `Axum` · `Proxmox`
 
