@@ -18,9 +18,9 @@ I build tools to **measure Linux behavior**, **diagnose system capabilities**, a
 
 ## Featured Projects
 
-I build these tools under **[DevUtils](https://github.com/devutils-org)** — [explore the projects](https://devutils-org.github.io/).
+I build these tools under **[DevUtils](https://github.com/devutils-org)** — [explore the projects](https://devutils-org.com/).
 
-### [Omniscient (`omn`)](https://devutils-org.github.io/tools/omn/) — Linux Profiling & Benchmark Automation
+### [Omniscient (`omn`)](https://devutils-org.com/tools/omn/) — Linux Profiling & Benchmark Automation
 
 A Rust-based Linux measurement engine for profiling, observability, and **benchmark-as-code** workflows. It collects data directly through **eBPF**, `perf_event_open`, `procfs`, `sysfs`, and netlink—without wrapping external profiling tools.
 
@@ -29,7 +29,7 @@ A Rust-based Linux measurement engine for profiling, observability, and **benchm
 
 `Rust` · `Linux` · `eBPF` · `perf_event_open` · `Profiling` · `CI/CD` · `Benchmark-as-Code`
 
-**Repository:** Private for now · [Project overview](https://devutils-org.github.io/tools/omn/)
+**Repository:** Private for now · [Project overview](https://devutils-org.com/tools/omn/)
 
 ### [distroproof](https://github.com/devutils-org/distroproof) — Linux Compatibility Diagnostics
 
@@ -40,7 +40,7 @@ A Rust tool for identifying why software behaves differently across Linux enviro
 
 `Rust` · `musl` · `Linux` · `Compatibility` · `JSON`
 
-**Repository:** [devutils-org/distroproof](https://github.com/devutils-org/distroproof) · [Project overview](https://devutils-org.github.io/tools/distroproof/)
+**Repository:** [devutils-org/distroproof](https://github.com/devutils-org/distroproof) · [Project overview](https://devutils-org.com/tools/distroproof/)
 
 ### [atfq](https://github.com/devutils-org/atfq) — Linux Diagnostics & Knowledge
 
@@ -50,7 +50,7 @@ A read-only Linux companion combining **50 live system probes**, an interactive 
 
 `Rust` · `CLI` · `TUI` · `procfs` · `sysfs` · `MCP`
 
-**Repository:** [devutils-org/atfq](https://github.com/devutils-org/atfq) · [Project overview](https://devutils-org.github.io/tools/atfq/)
+**Repository:** [devutils-org/atfq](https://github.com/devutils-org/atfq) · [Project overview](https://devutils-org.com/tools/atfq/)
 
 ### [xpac](https://github.com/devutils-org/xpac) — Package Inventory & Reconciliation
 
@@ -61,7 +61,7 @@ A Rust CLI for inspecting installed packages, understanding their provenance and
 
 `Rust` · `CLI` · `TUI` · `Package Management` · `TOML`
 
-**Repository:** [devutils-org/xpac](https://github.com/devutils-org/xpac) · [Project overview](https://devutils-org.github.io/tools/xpac/)
+**Repository:** [devutils-org/xpac](https://github.com/devutils-org/xpac) · [Project overview](https://devutils-org.com/tools/xpac/)
 
 ### [VMAnyware](https://github.com/devutils-org/VMAnyware) — Homelab Infrastructure
 
@@ -72,7 +72,7 @@ An early-stage native application intended to manage reproducible Linux environm
 
 `Rust` · `Tauri` · `React` · `Axum` · `Proxmox`
 
-**Repository:** [devutils-org/VMAnyware](https://github.com/devutils-org/VMAnyware) · [Project overview](https://devutils-org.github.io/tools/vmanyware/)
+**Repository:** [devutils-org/VMAnyware](https://github.com/devutils-org/VMAnyware) · [Project overview](https://devutils-org.com/tools/vmanyware/)
 
 ## Other Engineering Projects
 
