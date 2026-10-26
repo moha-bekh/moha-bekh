@@ -29,7 +29,7 @@ A Rust-based Linux measurement engine for profiling, observability, and **benchm
 
 `Rust` · `Linux` · `eBPF` · `perf_event_open` · `Profiling` · `CI/CD` · `Benchmark-as-Code`
 
-**Repository:** Private for now · [Project overview](https://devutils-org.com/tools/omn/)
+**Repository:** [devutils-org/omniscient](https://github.com/devutils-org/omniscient) · [Project overview](https://devutils-org.com/tools/omn/)
 
 ### [distroproof](https://github.com/devutils-org/distroproof) — Linux Compatibility Diagnostics
 
