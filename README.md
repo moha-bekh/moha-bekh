@@ -82,7 +82,7 @@ An early-stage native application intended to manage reproducible Linux environm
 - **[ATFQ-wiki](https://github.com/moha-bekh/atfq-wiki)** — Question-driven wiki and learning platform (separate from the Linux diagnostics tool featured above).
 - **[libasm](https://github.com/moha-bekh/asm)** — x86-64 Assembly implementations exploring the System V ABI and calling conventions.
 - **[ft_nm](https://github.com/moha-bekh/ft_nm)** — ELF symbol inspection and binary format analysis.
-- **[ft_linux]** — Linux From Scratch distribution built from source, including kernel and userspace configuration.
+- **[ft_linux](https://github.com/moha-bekh)** — Linux From Scratch distribution built from source, including kernel and userspace configuration.
 - **[kfs](https://github.com/moha-bekh/kfs)** — First steps toward building a small operating system kernel.
 - **[krpsim](https://github.com/moha-bekh/krpsim)** — Discrete-event simulation, dependency graphs, and scheduling algorithms.
 - **[Snow Crash](https://github.com/moha-bekh/snow-crash)** — Linux privilege escalation and security exercises.
