@@ -87,7 +87,7 @@ An early-stage native application intended to manage reproducible Linux environm
 - **[ft_nm](https://github.com/moha-bekh/ft_nm)** — ELF symbol inspection and binary format analysis.
 - **[badass](https://github.com/moha-bekh/BADASS)** — Network simulation and configuration with GNS3, Docker, VXLAN, BGP EVPN, and routing protocols.
 - **[krpsim](https://github.com/moha-bekh/krpsim)** — Discrete-event simulation, dependency graphs, and scheduling algorithms.
-- **[kfs-1](https://github.com/moha-bekh/kernel-from-scratch)** — First steps toward building a small operating system kernel.
+- **[kfs-1](https://github.com/moha-bekh/kfs)** — First steps toward building a small operating system kernel.
 - **[miniRT](https://github.com/moha-bekh/miniRT)** — Minimal ray tracer in C exploring ray-object intersections, lighting, and 3D rendering.
 
 ## Toolbox
