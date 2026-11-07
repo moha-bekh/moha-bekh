@@ -76,19 +76,19 @@ An early-stage native application intended to manage reproducible Linux environm
 
 ## Other Engineering Projects
 
-- **[ATFQ Wiki](https://github.com/moha-bekh/atfq-poc)** — Question-driven wiki and learning platform (separate from the Linux diagnostics tool featured above).
-- **[WebServ](https://github.com/moha-bekh/WebServ)** — Asynchronous HTTP server in C++: `epoll`, HTTP parsing, CGI, state machines, and memory management.
 - **[MiniShell](https://github.com/moha-bekh/minishell)** — Unix shell in C: process management, signals, pipes, expansions, and AST parsing.
+- **[miniRT](https://github.com/moha-bekh/miniRT)** — Minimal ray tracer in C exploring ray-object intersections, lighting, and 3D rendering.
+- **[WebServ](https://github.com/moha-bekh/WebServ)** — Asynchronous HTTP server in C++: `epoll`, HTTP parsing, CGI, state machines, and memory management.
+- **[ATFQ-wiki](https://github.com/moha-bekh/atfq-wiki)** — Question-driven wiki and learning platform (separate from the Linux diagnostics tool featured above).
 - **[libasm](https://github.com/moha-bekh/asm)** — x86-64 Assembly implementations exploring the System V ABI and calling conventions.
-- **ft_linux** — Linux From Scratch distribution built from source, including kernel and userspace configuration.
+- **[ft_nm](https://github.com/moha-bekh/ft_nm)** — ELF symbol inspection and binary format analysis.
+- **[ft_linux]** — Linux From Scratch distribution built from source, including kernel and userspace configuration.
+- **[kfs](https://github.com/moha-bekh/kfs)** — First steps toward building a small operating system kernel.
+- **[krpsim](https://github.com/moha-bekh/krpsim)** — Discrete-event simulation, dependency graphs, and scheduling algorithms.
 - **[Snow Crash](https://github.com/moha-bekh/snow-crash)** — Linux privilege escalation and security exercises.
 - **[Cloud-1](https://github.com/moha-bekh/cloud-1)** — Cloud infrastructure, deployment automation, and Infrastructure as Code.
 - **[Inception of Things](https://github.com/moha-bekh/Inception-of-Things)** — Kubernetes fundamentals, container orchestration, and GitOps.
-- **[ft_nm](https://github.com/moha-bekh/ft_nm)** — ELF symbol inspection and binary format analysis.
-- **[badass](https://github.com/moha-bekh/BADASS)** — Network simulation and configuration with GNS3, Docker, VXLAN, BGP EVPN, and routing protocols.
-- **[krpsim](https://github.com/moha-bekh/krpsim)** — Discrete-event simulation, dependency graphs, and scheduling algorithms.
-- **[kfs-1](https://github.com/moha-bekh/kfs)** — First steps toward building a small operating system kernel.
-- **[miniRT](https://github.com/moha-bekh/miniRT)** — Minimal ray tracer in C exploring ray-object intersections, lighting, and 3D rendering.
+- **[BADASS](https://github.com/moha-bekh/BADASS)** — Network simulation and configuration with GNS3, Docker, VXLAN, BGP EVPN, and routing protocols.
 
 ## Toolbox
 
